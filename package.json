@@ -1,0 +1,24 @@
+{
+  "name": "blog-server",
+  "version": "1.0.0",
+  "description": "a server for blog posts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dahomeykid/wbs-blog-app-gpt.git"
+  },
+  "keywords": [
+    "wbs",
+    "gpt",
+    "blog"
+  ],
+  "author": "chatgpt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dahomeykid/wbs-blog-app-gpt/issues"
+  },
+  "homepage": "https://github.com/dahomeykid/wbs-blog-app-gpt#readme"
+}
