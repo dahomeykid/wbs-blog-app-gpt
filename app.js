@@ -1,17 +1,17 @@
+require('dotenv').config();
 const express = require('express');
 const { Pool } = require('pg');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const pool = new Pool({
-    user: 'your_user',
-    host: 'your-neon-host',
-    database: 'your_database',
-    password: 'your_password',
-    port: 5432,
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT,
     ssl: { rejectUnauthorized: false }
 });
-
 
 app.use(express.json());
 
