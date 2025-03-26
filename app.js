@@ -18,6 +18,11 @@ const pool = new Pool({
 app.use(cors());
 app.use(express.json());
 
+// GET / - welcome message
+app.get("/", (req, res) => {
+    res.json({message: "Welcome to the blog API"});
+});
+
 // GET /posts - Retrieve all posts
 app.get("/posts", async (req, res) => {
     const result = await pool.query("SELECT * FROM posts ORDER BY created_at DESC");
