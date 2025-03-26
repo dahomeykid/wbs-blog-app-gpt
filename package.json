@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "a server for blog posts",
   "main": "app.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/dahomeykid/wbs-blog-app-gpt/issues"
   },
-  "homepage": "https://github.com/dahomeykid/wbs-blog-app-gpt#readme"
+  "homepage": "https://github.com/dahomeykid/wbs-blog-app-gpt#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.14.1"
+  }
 }
